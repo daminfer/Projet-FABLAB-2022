@@ -1,0 +1,20 @@
+h4 {
+    text-shadow:#e7f6ff 0 -1px 0,
+    #830b60 1px 1px 0,
+    #a70e60 2px 2px 0,
+    #d51c60 3px 3px 0,
+    #ee4b60 4px 4px 0,
+    #fc7961 5px 5px 0,
+    #333 5px 5px 10px;
+    color:#000000;
+
+}
+
+h5 {
+    text-shadow:0 0 2px #D000FE,0 0 30px #D000FE,0px 0px 5px #D000FE, 0 0 150px #D000FE;color:#D000FE;
+}
+
+p {
+    text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
+}
+

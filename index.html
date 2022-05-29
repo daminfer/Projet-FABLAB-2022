@@ -3,6 +3,7 @@
 <head>
   <title>MQTT Arduino data</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -36,7 +37,7 @@
 
 <div class="container">
 		<div class="d-sm-flex flex-sm-row mb-2">
-			<div class="m-1 mr-auto"><h2>Connexion à Arduino via un serveur MQTT</h2></div>
+			<div class="m-1 mr-auto"><h2>Projet: Serre connecté </h2></div>
 			<div class="m-2 text-right"><b>Status : </b><span id = "status"><b>Non connecté</b></span></div>
 			<div class="m-2 text-right"><input id ="btn_action" style="font-weight: bold; background-color: #ff7e8b;" TYPE="button" name="action_connexion" value="Connexion" onclick="ConnexDeconnex()"></div>
 		</div>
@@ -58,30 +59,21 @@
 	<div class="tab-content">
 		<div id="home" class="container tab-pane active"><br>
 			<h4>Tableau de bord</h4>
-				<div class="container" style ="border-radius: 20px; background-color: lightblue;">
-					<div class="d-flex justify-content-center mb-1"  >
-						<div class="d-flex justify-content-center mt-3">
-								<div class="p-2 mx-auto" style="text-align:center;">
-									<span><b>Commande LED rouge :</b> </span>
-									<input type="range" min="0" max="255" value="0" id ="redRange" >
-								</div>
-								<div class="p-2" style="text-align:center;">
-									<span><b>Commande LED verte :</b> </span>
-									<input type="range" min="0" max="255" value="0" id ="greenRange">
-								</div>
-								<div class="p-2 mx-auto" style="text-align:center;">
-									<span><b>Commande LED bleue :</b> </span>
-									<input type="range" min="0" max="255" value="0" id ="blueRange" >
-								</div>
-						</div>
+				<div class="container" style ="border-radius: 20px; background-color: rgb(0, 0, 0);">
+					<p><h5>Historique Projet:</h5><br></p>
+					<p>Notre premier prototype est la constitution d'une serre qui donnera des informations en temps réel pour simplifier les tâches répétitive liée au jardinage, en effet avec un tel système, il suffit de définir les paramètres et l'entretien sera assuré.</p>
+					<p>- A chaque x temps, la serre sera ravitailler en eau, grace a ça pompe</p>
+					<p>- A chaque x temps, diverse information seront communiquer en temps réel (humidité, luminosité, ect ...)</p>
+					<p><h5> Schéma du projet:</h5><br><img src="Mini_serre.png" width="800" height="350"><br></p>
+					<p><h5> Schéma du circuit éléctrique:</h5><br><img src="Mini_serre.png" width="800" height="350"></p>
+					<p><h5> Information actuel: </h5><br></p>
+					<div>
+						<p> humidité de l'air: </p>
+						<p> Température: </p>
+						<p> Luminosité: </p>
 					</div>
-					<div class="d-sm-flex flex-sm-row align-items-center justify-content-center mb-3 text-center">
-						<div class="p-2">
-							<canvas id="LUXMETRE"></canvas><br><br>
-							<p><b>Eclairement : <span id ="ECL1" style ="font-weight: bold;">--</span> lx</b></p>
-						</div>
-						
-					</div>
+
+
 				</div>
 
 		</div>
